@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF0598D0181A288500EF591B /* place.wav in Resources */ = {isa = PBXBuildFile; fileRef = AF0598CF181A288500EF591B /* place.wav */; };
+		AF96981918149CB000CB801F /* PegView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF96981818149CB000CB801F /* PegView.m */; };
+		AF96981B1814A9AA00CB801F /* pickup.wav in Resources */ = {isa = PBXBuildFile; fileRef = AF96981A1814A9AA00CB801F /* pickup.wav */; };
 		AFA9937F180E2FD400137B12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA9937E180E2FD400137B12 /* Foundation.framework */; };
 		AFA99381180E2FD400137B12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA99380180E2FD400137B12 /* CoreGraphics.framework */; };
 		AFA99383180E2FD400137B12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA99382180E2FD400137B12 /* UIKit.framework */; };
@@ -23,6 +26,14 @@
 		AFA993A6180E2FD400137B12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA99382180E2FD400137B12 /* UIKit.framework */; };
 		AFA993AE180E2FD400137B12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFA993AC180E2FD400137B12 /* InfoPlist.strings */; };
 		AFA993B0180E2FD400137B12 /* PegsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA993AF180E2FD400137B12 /* PegsTests.m */; };
+		AFA993BA180E300900137B12 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA993B9180E300900137B12 /* AudioToolbox.framework */; };
+		AFA993BD180E368700137B12 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA993BC180E368700137B12 /* MainView.m */; };
+		AFA993C4180E386400137B12 /* lost.wav in Resources */ = {isa = PBXBuildFile; fileRef = AFA993BF180E386400137B12 /* lost.wav */; };
+		AFA993C5180E386400137B12 /* undo.wav in Resources */ = {isa = PBXBuildFile; fileRef = AFA993C0180E386400137B12 /* undo.wav */; };
+		AFA993C6180E386400137B12 /* won.wav in Resources */ = {isa = PBXBuildFile; fileRef = AFA993C1180E386400137B12 /* won.wav */; };
+		AFA993C7180E386400137B12 /* illegal.wav in Resources */ = {isa = PBXBuildFile; fileRef = AFA993C2180E386400137B12 /* illegal.wav */; };
+		AFA993C8180E386400137B12 /* new.wav in Resources */ = {isa = PBXBuildFile; fileRef = AFA993C3180E386400137B12 /* new.wav */; };
+		AFE1FFC21813273300254812 /* Algorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE1FFC11813273300254812 /* Algorithm.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF0598CF181A288500EF591B /* place.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = place.wav; sourceTree = "<group>"; };
+		AF96981718149CB000CB801F /* PegView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PegView.h; sourceTree = "<group>"; };
+		AF96981818149CB000CB801F /* PegView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PegView.m; sourceTree = "<group>"; };
+		AF96981A1814A9AA00CB801F /* pickup.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pickup.wav; sourceTree = "<group>"; };
 		AFA9937B180E2FD400137B12 /* Pegs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pegs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA9937E180E2FD400137B12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AFA99380180E2FD400137B12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,6 +73,16 @@
 		AFA993AB180E2FD400137B12 /* PegsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PegsTests-Info.plist"; sourceTree = "<group>"; };
 		AFA993AD180E2FD400137B12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AFA993AF180E2FD400137B12 /* PegsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PegsTests.m; sourceTree = "<group>"; };
+		AFA993B9180E300900137B12 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AFA993BB180E368700137B12 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		AFA993BC180E368700137B12 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		AFA993BF180E386400137B12 /* lost.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lost.wav; sourceTree = "<group>"; };
+		AFA993C0180E386400137B12 /* undo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = undo.wav; sourceTree = "<group>"; };
+		AFA993C1180E386400137B12 /* won.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = won.wav; sourceTree = "<group>"; };
+		AFA993C2180E386400137B12 /* illegal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = illegal.wav; sourceTree = "<group>"; };
+		AFA993C3180E386400137B12 /* new.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = new.wav; sourceTree = "<group>"; };
+		AFE1FFC01813273300254812 /* Algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Algorithm.h; sourceTree = "<group>"; };
+		AFE1FFC11813273300254812 /* Algorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Algorithm.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA993BA180E300900137B12 /* AudioToolbox.framework in Frameworks */,
 				AFA99381180E2FD400137B12 /* CoreGraphics.framework in Frameworks */,
 				AFA99383180E2FD400137B12 /* UIKit.framework in Frameworks */,
 				AFA9937F180E2FD400137B12 /* Foundation.framework in Frameworks */,
@@ -106,6 +132,7 @@
 		AFA9937D180E2FD400137B12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AFA993B9180E300900137B12 /* AudioToolbox.framework */,
 				AFA9937E180E2FD400137B12 /* Foundation.framework */,
 				AFA99380180E2FD400137B12 /* CoreGraphics.framework */,
 				AFA99382180E2FD400137B12 /* UIKit.framework */,
@@ -117,6 +144,12 @@
 		AFA99384180E2FD400137B12 /* Pegs */ = {
 			isa = PBXGroup;
 			children = (
+				AFE1FFC01813273300254812 /* Algorithm.h */,
+				AFE1FFC11813273300254812 /* Algorithm.m */,
+				AFA993BB180E368700137B12 /* MainView.h */,
+				AFA993BC180E368700137B12 /* MainView.m */,
+				AF96981718149CB000CB801F /* PegView.h */,
+				AF96981818149CB000CB801F /* PegView.m */,
 				AFA9938D180E2FD400137B12 /* AppDelegate.h */,
 				AFA9938E180E2FD400137B12 /* AppDelegate.m */,
 				AFA99390180E2FD400137B12 /* Main_iPhone.storyboard */,
@@ -127,6 +160,7 @@
 				AFA9939A180E2FD400137B12 /* FlipsideViewController.m */,
 				AFA9939C180E2FD400137B12 /* Images.xcassets */,
 				AFA99385180E2FD400137B12 /* Supporting Files */,
+				AFA993BE180E382100137B12 /* Sound Files */,
 			);
 			path = Pegs;
 			sourceTree = "<group>";
@@ -158,6 +192,20 @@
 				AFA993AC180E2FD400137B12 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFA993BE180E382100137B12 /* Sound Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF0598CF181A288500EF591B /* place.wav */,
+				AF96981A1814A9AA00CB801F /* pickup.wav */,
+				AFA993BF180E386400137B12 /* lost.wav */,
+				AFA993C0180E386400137B12 /* undo.wav */,
+				AFA993C1180E386400137B12 /* won.wav */,
+				AFA993C2180E386400137B12 /* illegal.wav */,
+				AFA993C3180E386400137B12 /* new.wav */,
+			);
+			name = "Sound Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,9 +284,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF96981B1814A9AA00CB801F /* pickup.wav in Resources */,
+				AFA993C8180E386400137B12 /* new.wav in Resources */,
+				AFA993C5180E386400137B12 /* undo.wav in Resources */,
+				AFA993C7180E386400137B12 /* illegal.wav in Resources */,
+				AFA993C4180E386400137B12 /* lost.wav in Resources */,
+				AF0598D0181A288500EF591B /* place.wav in Resources */,
 				AFA99395180E2FD400137B12 /* Main_iPad.storyboard in Resources */,
 				AFA9939D180E2FD400137B12 /* Images.xcassets in Resources */,
 				AFA99392180E2FD400137B12 /* Main_iPhone.storyboard in Resources */,
+				AFA993C6180E386400137B12 /* won.wav in Resources */,
 				AFA99389180E2FD400137B12 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,10 +313,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA993BD180E368700137B12 /* MainView.m in Sources */,
+				AFE1FFC21813273300254812 /* Algorithm.m in Sources */,
 				AFA9938F180E2FD400137B12 /* AppDelegate.m in Sources */,
 				AFA99398180E2FD400137B12 /* MainViewController.m in Sources */,
 				AFA9939B180E2FD400137B12 /* FlipsideViewController.m in Sources */,
 				AFA9938B180E2FD400137B12 /* main.m in Sources */,
+				AF96981918149CB000CB801F /* PegView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +434,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Peter Wansch (3EWEPMV8WF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Peter Wansch (3EWEPMV8WF)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -411,6 +470,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Peter Wansch (3EWEPMV8WF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Peter Wansch (3EWEPMV8WF)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pegs/Pegs-Prefix.pch";
 				INFOPLIST_FILE = "Pegs/Pegs-Info.plist";
@@ -480,6 +541,7 @@
 				AFA993B5180E2FD400137B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFA993B6180E2FD400137B12 /* Build configuration list for PBXNativeTarget "PegsTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +550,7 @@
 				AFA993B8180E2FD400137B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
