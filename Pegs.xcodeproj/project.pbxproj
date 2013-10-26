@@ -461,6 +461,7 @@
 				GCC_PREFIX_HEADER = "Pegs/Pegs-Prefix.pch";
 				INFOPLIST_FILE = "Pegs/Pegs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -476,6 +477,7 @@
 				GCC_PREFIX_HEADER = "Pegs/Pegs-Prefix.pch";
 				INFOPLIST_FILE = "Pegs/Pegs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6258A741-D757-44F8-A2BF-51EA6B8C6D74";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
