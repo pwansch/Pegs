@@ -128,9 +128,6 @@ short asSOLITAIRE[DIVISIONS][DIVISIONS] =
 {
     [super viewDidAppear:animated];
     
-	// Draw the view
-	[self.view setNeedsDisplay];
-    
     // Change the location of the buttons
     UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
     if (UIInterfaceOrientationIsLandscape(orientation)) {
@@ -140,6 +137,9 @@ short asSOLITAIRE[DIVISIONS][DIVISIONS] =
         self.gameButton.frame = CGRectMake(20, self.view.bounds.size.height - 44, 60, 30);
         self.undoButton.frame = CGRectMake(88, self.view.bounds.size.height - 44, 60, 30);
     }
+    
+	// Draw the view
+	[self.view setNeedsDisplay];
 }
 
 - (void)didReceiveMemoryWarning
@@ -165,6 +165,7 @@ short asSOLITAIRE[DIVISIONS][DIVISIONS] =
         [self dismissViewControllerAnimated:YES completion:nil];
     } else {
         [self.flipsidePopoverController dismissPopoverAnimated:YES];
+        self.flipsidePopoverController = nil;
     }
 }
 
@@ -200,7 +201,7 @@ short asSOLITAIRE[DIVISIONS][DIVISIONS] =
 {
     if(!self.fGameOver) {
         UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Do you want to start a new game?" delegate:self cancelButtonTitle:@"No" destructiveButtonTitle:@"Yes" otherButtonTitles:nil];
-        if ([sender isKindOfClass:[FlipsideViewController class]]) {
+        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [sender isKindOfClass:[FlipsideViewController class]]) {
             FlipsideViewController *controller = sender;
             [actionSheet showInView:controller.view];
         } else {
@@ -301,7 +302,7 @@ short asSOLITAIRE[DIVISIONS][DIVISIONS] =
     }
     mainView.board = boardIni;
     self.sCount = self.layout;
-    mainView.text = [[NSString alloc] initWithFormat: @"Tap a peg to pick it up."];
+    mainView.text = [[NSString alloc] initWithFormat: @"Drag a peg to jump over an adjacent peg."];
     
 	// Draw the view
 	[mainView setNeedsDisplay];

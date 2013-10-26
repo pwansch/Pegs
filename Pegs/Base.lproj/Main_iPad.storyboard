@@ -48,9 +48,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FTa-do-hRx" kind="popover" popoverAnchorView="gTr-bf-jJ5" id="EmS-kH-uzW">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <action selector="togglePopover:" destination="aVO-UE-KGo" eventType="touchUpInside" id="p9I-Ot-mCl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -59,6 +57,9 @@
                         <outlet property="gameButton" destination="qLZ-61-zsG" id="Tmb-LC-iCE"/>
                         <outlet property="infoButton" destination="gTr-bf-jJ5" id="w0f-I0-3VD"/>
                         <outlet property="undoButton" destination="GNj-mi-n39" id="DRW-HC-qjs"/>
+                        <segue destination="FTa-do-hRx" kind="popover" identifier="showAlternate" popoverAnchorView="gTr-bf-jJ5" id="dV8-gP-cFA">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="asY-HQ-Guj" sceneMemberID="firstResponder"/>
@@ -73,6 +74,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sound Effects" lineBreakMode="tailTruncation" minimumFontSize="10" id="fon-JQ-GVO">
+                                <rect key="frame" x="20" y="60" width="108" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="KHB-WK-0L4">
+                                <rect key="frame" x="251" y="55" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pw6-al-7Mk">
+                                <rect key="frame" x="20" y="313" width="280" height="519"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <string key="text">Pegs is played by jumping a peg across any adjacent peg and placing it in an open space on the other side. Only horizontal and vertical jumps are allowed. A peg that has been jumped is automatically removed from the board. The object of the game is to jump all the pegs until only one peg remains. To jump a peg tap the peg you want to jump with and drag that peg over another peg.
+
+It is most challenging to end the game with the last peg in the center of the board, but you win as long as only one peg remains anywhere on the board.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <pickerView opaque="NO" contentMode="scaleToFill" id="BFI-By-vbk">
+                                <rect key="frame" x="0.0" y="89" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="FTa-do-hRx" id="mZP-Ve-3gz"/>
+                                    <outlet property="delegate" destination="FTa-do-hRx" id="6W0-wa-FBB"/>
+                                </connections>
+                            </pickerView>
                             <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8Bx-U8-Xwy">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -80,7 +112,7 @@
                                     <navigationItem title="Settings" id="UD1-FV-3cM">
                                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="8zt-ik-JXd">
                                             <connections>
-                                                <action selector="done:" destination="FTa-do-hRx" id="JoJ-z8-Ud1"/>
+                                                <action selector="done:" destination="FTa-do-hRx" id="eX4-lt-M1O"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -89,6 +121,11 @@
                         </subviews>
                     </view>
                     <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="layoutPicker" destination="BFI-By-vbk" id="jHK-vD-R9D"/>
+                        <outlet property="soundSwitch" destination="KHB-WK-0L4" id="Uw2-2g-dwj"/>
+                        <outlet property="textView" destination="Pw6-al-7Mk" id="G75-sm-UPd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9mE-fb-xOw" sceneMemberID="firstResponder"/>
             </objects>

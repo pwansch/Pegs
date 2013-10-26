@@ -93,7 +93,7 @@
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	[defaults setBool:self.soundSwitch.on forKey:kSoundKey];
     NSInteger row = [self.layoutPicker selectedRowInComponent:0];
-    short layout;
+    short layout = [defaults integerForKey:kLayoutKey];
     switch (row) {
         case 0:
             layout = CROSS;
